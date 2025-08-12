@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            position: static;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(57, 87, 171);
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            /* height: 100px;
+            width: 100px; */
+
+            padding: 20px;
+            border: 1px solid black;
+            transform: translate(25%);
+
+
+
+        }
+
+        /* ----------------------------------- */
+        .container2 {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(57, 87, 171);
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .box2 {
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            border: 1px solid black;
+            transform: translate(25%);
+        }
+
+        /* ----------------------------------------- */
+        .container3 {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(57, 87, 171);
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .boxAB1 {
+            position: absolute;
+            z-index: 1;
+            margin-left: 105px;
+        }
+
+        .boxAB2 {
+            position: absolute;
+            margin-left: 55px;
+        }
+
+        /* ========================= FIXED ===================== */
+
+        .container4 {
+
+            height: 500px;
+            width: 500px;
+            background-color: rgb(57, 87, 171);
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .fixed-box {
+
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid black;
+            margin-left: 300px;
+            top: 20px;
+
+
+        }
+
+        .boxfix {
+            height: 200px;
+            width: 250px;
+            padding: 20px;
+            border: 1px solid black;
+            transform: translate(25%);
+
+        }
+
+        /* =================== STICKY STYLE ========================= */
+        .container5 {
+
+            height: 10x;
+            width: 500px;
+            background-color: rgb(57, 87, 171);
+            border: 2px solid black;
+            /* display: flex; */
+            /* align-items: center; */
+
+
+
+        }
+
+        .sticky-box {
+            position: sticky;
+
+            /* padding:10px; */
+            /* margin-bottom: 460px; */
+
+            margin-left: 20px;
+            margin-right: 20px;
+            width: px;
+            height: 20px;
+            font-weight: bold;
+            background-color: rgb(228, 50, 6);
+            border: 3px solid black;
+
+
+        }
+
+        .content {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        
+            /* overflow-x: auto;
+            overflow-y: auto; */
+        }
+         .sticky{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -----------------STATICS -------------------------------->
+    <h1>STATIC :</h1>
+    <div class="container1">
+        <div class="box" style="background-color: rgb(241, 27, 209);"></div>
+        <div class="box" style="background-color: rgb(120, 12, 215);"></div>
+        <div class="box" style="background-color: rgb(30, 215, 101);"></div>
+
+    </div>
+
+    <!-- ---------------------RELATIVE------------------- -->
+    <br><br>
+    <h1> RELATIVE :</h1>
+    <div class="container2">
+
+        <div class="box2" style="background-color: rgb(241, 27, 209);"></div>
+        <div class="box2" style="background-color: rgb(120, 12, 215);"></div>
+        <div class="box2" style="background-color: rgb(30, 215, 101);"></div>
+
+    </div>
+
+
+    <!-- -------------------------- -->
+    <h1> ABSOLUTE :</h1>
+    <div class="container3">
+
+        <div class=" boxAB1" style="background-color: rgb(241, 27, 209); height: 100px;width:100px;"></div>
+        <div class=" boxAB2" style="background-color: rgb(120, 12, 215);height: 250px;width:250px;"></div>
+        <div class=" boxAB3" style="background-color: rgb(30, 215, 101);height: 300px;width:300px;margin-left: 30px;">
+        </div>
+
+
+    </div>
+
+    <!-- ----------------------------------FIXED................. -->
+    <h1> FIXED</h1>
+    <div class="container4">
+
+        <div class="boxfix" style="background-color: rgba(184, 241, 27, 0.744);"></div>
+        <div class="fixed-box" style="background-color: rgb(30, 215, 101); padding-top: px;"> FIXED BOX</div>
+    </div>
+    <!-- ----------------- STATIC------------------------------- -->
+
+    <h1>STICKY :</h1>
+
+        <div>
+            <div class="sticky" style="background-color: rgb(56, 39, 123);height: 100px; width: 100% "> </div>
+            <div style="background-color: rgb(12, 102, 87);height: 200px;width: 100%;"></div>
+            <div style="height:700px; margin-top:10px;"></div>
+            <div style="height:700px; margin-top:10px;"></div>
+        </div>
+</body>
+
+</html>

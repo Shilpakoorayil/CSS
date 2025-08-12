@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginSite</title>
+    <!-- EXTERNAL css page calling for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(170deg, #b621fe, #1fd1f9);
+
+            /* display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box; */
+
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            z-index: 1;
+
+        }
+
+        .signup_box {
+            width: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            border: none;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
+
+        }
+
+        .title {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #444444;
+            margin: 20px 0 70px 0;
+        }
+
+
+        .textbox {
+            margin-bottom: 15px;
+            text-align: left;
+            border: #b621fe;
+        }
+
+        .textbox label {
+            display: block;
+            margin-bottom: 5px;
+
+            color: #555;
+        }
+
+
+        .textbox input[type="text"],
+        .textbox input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            /* border:none; */
+            /* border-radius: 4px; */
+            /* border-bottom; */
+            box-sizing: border-box;
+            /* Include padding in width */
+        }
+
+        .textbox:hover {
+
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: #810404;
+        }
+
+        .icon {
+            position: absolute;
+            left: 10px;
+            /* Adjust as needed */
+            top: 50%;
+            color: gray;
+            height: 10px;
+            width: 10px;
+            transform: translateY(-50%);
+        }
+
+        .textbox.icon {
+            margin-right: 10px;
+        }
+
+        .forget {
+            font-size: 6px;
+            margin-left: 208px;
+        }
+
+        .button input {
+            width: 90%;
+            border-radius: 50px;
+            padding: 12px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 40px 0;
+            color: white;
+            background-image: linear-gradient(150deg, #b621fe, #1fd1f9);
+
+        }
+
+        .button input:hover {
+            background-image: linear-gradient(150deg, #b621fe, #1fd1f9);
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup_box">
+
+            <div class="title"><b>Login</b></div><br>
+
+            <!-- USERNAME -->
+            <div class="textbox">
+                <label for="username">Username</label><br>
+               
+                <input type="text" placeholder="Type your Username">
+                 <i style="margin-top: 20px;" class="fa-solid fa-user"></i>
+
+            </div>
+            <!-- Password -->
+            <div class="textbox">
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Password">
+                <i class="fa-solid fa-lock"></i>
+
+            </div>
+            <div class="forget"> <a href="">Forget password</a></div>
+
+            <div class="button">
+                <input type="button" value="Login">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

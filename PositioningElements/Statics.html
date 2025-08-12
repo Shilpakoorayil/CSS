@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PositionElement:Static</title>
+    <style>
+        .container{
+            display: flex;
+             /* justify-content: space-between; */
+            /* align-items: center; */
+            padding: 10px;
+
+        }
+        .static1{
+            /* by default Static Function */
+            background-color: blueviolet;
+            padding: 20px;
+            position: static;
+           
+        }
+        .static2{
+            background-color: brown;
+            padding:20px;
+            position: static;
+            top:50px;
+            left:30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="static1">BOX-1 Static </div>
+    <div class="static2">BOX-2 Static(top/left-- no effect) </div>
+    </div>
+    
+</body>
+</html>

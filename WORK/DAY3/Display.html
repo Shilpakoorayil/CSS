@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* ===================== BLOCK ============================== */
+        .block1 {
+            display: block;
+            background-color: rgb(0, 255, 47);
+            width: 400px;
+            height: 80px;
+        }
+
+        .block2 {
+            display: block;
+            background-color: rgb(209, 157, 189);
+            width: 400px;
+            height: 80px;
+        }
+
+        .block3 {
+            display: block;
+            background-color: rgb(247, 209, 98);
+            width: 150px;
+            height: 80px;
+        }
+
+        .block4 {
+            display: block;
+            background-color: rgb(45, 184, 208);
+            width: 450px;
+            height: 80px;
+        }
+/* =========================== INLINE  ======================================= */
+        .inline {
+            display: inline;
+            /* the default for span */
+            /* No need of giving height and width here */
+            padding: 35px;
+            margin-right: 30px;
+            border: 1px solid rgb(19, 19, 19);
+        }
+/* ==============================INLINE  BLOCK============================ */
+        .inlineblock {
+            display: inline-block;
+            width: 200px;
+            height: 70px;
+            padding: 5px;
+            margin-left: 50px;
+            border: 1px solid blue;
+            /* display: flex; */
+        }
+     /* ============================================================= */
+    </style>
+</head>
+
+<body>
+ <!-- -------------------------------------------------------- -->
+    <h2><u>DISPLAY BLOCK</u></h2>
+  
+    <div class="block1"> </div><br>
+    <div class="block2"> </div><br>
+    <div class="block3"> </div><br>
+    <div class="block4"> </div><br>
+ <br>
+    <br>
+    <!-- --------------------------------------------------- -->
+    <h2><u>DISPLAY INLINE</u></h2>
+  
+    
+   <P>ONLY TAKES NECESSARY WIDTH (text elements)</P>
+   <BR>
+    <br>
+    <div>
+        <span class="inline" style="background-color: green;">GREEN  INLINE </span> 
+        <span class="inline" style="background-color: pink;">PINK  INLINE</span>
+        <span class="inline" style="background-color: orange;"> ORANGE INLINE</span>
+        <span class="inline" style="background-color: rgb(98, 133, 178);">BLUE INLINE</span>
+   
+
+    </div>
+
+   
+    <br>
+    <br>
+<!-- ----------------------------------------------------------------- -->
+    <h2><u>DISPLAY: INLINE -BLOCK</u></h2>
+    <br>
+
+    <div>
+        <span class="inlineblock" style="background-color: blue;"> </span>
+        <span class="inlineblock" style="background-color: rgb(0, 255, 4);"> </span>
+        <span class="inlineblock" style="background-color: rgb(209, 17, 180);"> </span>
+        <span class="inlineblock" style="background-color: rgb(170, 221, 28);"> </span>
+    </div>
+
+</body>
+
+</html>
