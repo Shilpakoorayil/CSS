@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+         
+         body{
+          margin: 0;
+          height: 100vh;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           background-color: black;
+          
+         }
+        .dots{
+           display: flex;
+           justify-content: center;
+           text-align: center;
+          
+        }
+        .dot{
+           height: 80px;
+           width: 80px;
+           margin-right: 20px;
+           margin-top: 450px;
+           border: none;
+           border-radius: 50px;
+           background-color: rgb(9, 174, 229);
+           animation: bounce 3s infinite ease-in-out
+        }
+           .dot:nth-child(2){
+            animation-delay: 3.3s;
+           }
+            .dot:nth-child(3){
+            animation-delay: 3.6s;
+           }
+           @keyframes bounce{
+            0%, 20%, 50% ,80% ,100%{
+              transform:translateY(0);
+            }
+            40%{
+             transform:translateY(-40%);
+            }
+            60%{
+               transform:translateY(-60%);
+            }
+           }
+
+          
+        
+    </style>
+</head>
+<body>
+   
+    <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    </div>
+</body>
+</html>

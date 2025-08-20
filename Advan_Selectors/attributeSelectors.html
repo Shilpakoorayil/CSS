@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[required] {
+            border: 2px solid red;
+
+        }
+
+        input[type="email"] {
+            background-color: aquamarine;
+
+        }
+
+        div[class~=highlight] {
+            background-color: yellow;
+
+        }
+
+        p[lang|="en"] {
+            /* exact ot start with */
+            color: blue;
+        }
+
+        /* ^  Start with */
+        a[href^="https"]{
+            color: greenyellow;
+        }
+        /*$ ends with  */
+
+        a[href$="logins"]{
+            color: rgb(255, 0, 128);
+        }
+        img[src$='jpg']{
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+           
+        }
+        a[href*='about']{
+            font-weight: bold;
+            text-decoration: underline;
+            background-color: brown;
+           
+            
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h2>Css Attribute Selectors</h2>
+
+
+    <!-- 1 -->
+    <input type="text" placeholder="Your name" required><br><br>
+    <!-- 2 -->
+    <input type="email" placeholder="Your Email"><br><br>
+    <!-- 3 -->
+    <div class="box highlight">Highlight</div>
+    <!-- 4 -->
+
+    <p lang="en"> English Paragraph</p>
+    <p lang="en-us"> US English[ Paragraph]</p>
+     <!-- 5 -->
+      <a href="https://example.com/login">Login Name</a>
+      <br><br>
+    <!-- End with......................... -->
+      <!-- 6 -->
+       <a href="http://example.com/logins">Login Name</a> <br><br>
+        
+       <img src="../WORK/SHILPA K copy.jpg" alt=""><br><br>
+       <!-- 7 -->
+ <a href="https://example.com/about">About Me</a> <br><br>
+       
+
+</body>
+
+</html>

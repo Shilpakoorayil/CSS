@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <STYle>
+        * {
+            background-color: lightskyblue;
+        }
+
+        .heads {
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            margin-top: 7px;
+            margin-right: 200px;
+            background-color: rgb(121, 215, 121);
+            width: 100%;
+            gap: 200px;
+            height: 10px;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+
+        }
+
+        .heading div {
+             background-color: rgb(121, 215, 121);
+        }
+        .img-descp{
+            display: flex;
+            margin-top: 25px;
+            gap :20px;
+            
+        } 
+
+        /* COMBINATORS */
+        /* 1   General Combinatore */
+        h2~ol{
+            color: rgb(234, 13, 157);
+        }
+        /* 2  Child Combinatore */
+        h2>ul{
+            color: rgb(246, 223, 15);
+        }
+        /* 3 Descendanted Combinatore */
+         ul li {
+            color: brown;
+           
+            height: 20PX;
+            width: 280PX;
+        }
+        /* 4 Adjacent Combinators */
+
+        P+P{
+            color: rgb(243, 137, 38);
+        }
+
+
+
+    </STYle>
+</head>
+
+<body>
+    <h1 class="heads"><b>Sarah's Favorite Animal</b></h1>
+
+    <div class="heading">
+        <div>Home</div>
+        <div>Fun Facts</div>
+    </div>
+<!-- ----------------------- -->
+ <div class="img-descp">
+    <div class="image">
+        <img src="data:image/jpeg;base64,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" alt="">
+    </div>
+
+    <br><br>
+    <div class="descrip">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, veritatis. </p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    orem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat laudantium ut.</p>
+    if you want to learn more about this ,please do watch onto t <a href="https://en.wikipedia.org Wikipedia">its Wikipedia page</a>
+</div>
+ </div>
+
+ <div>
+    <h2>Moose are awesome beautiful</h2>
+    <ol>
+        <li>They can swim really well</li>
+        <li>They can make really fun noises</li>
+        <li>They can close the nostrils</li>
+    </ol>
+ </div>
+ <!-- ------------- -->
+   <div>
+    <h2>If I were a moose, I  would</h2>
+    <ul>
+        <li>Eat lots of lettuce</li>
+        <li>Carry little animalas on my antlers</li>
+        <li>Swim to Alaska</li>
+    </ul>
+ </div>
+
+
+</body>
+
+</html>

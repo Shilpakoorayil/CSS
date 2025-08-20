@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            background-color: aliceblue;
+            margin-top: 50%;
+            transition: border-color 0.3s;
+
+        }
+
+        .btn {
+            height: 200px;
+            width: 250px;
+            transition: border-color 0.3s;
+            border-radius: 30%;
+            cursor: pointer;
+
+        }
+
+        .cfm {
+            height: 200px;
+            width: 250px;
+            transition: border-color 0.3s;
+            border-radius: 30%;
+            cursor: pointer;
+
+
+        }
+
+        .btn:active {
+            font-size: large;
+            font-weight: bold;
+            color: rgb(182, 172, 172);
+            background-image: linear-gradient(rgb(238, 255, 0), rgb(0, 255, 119));
+
+
+
+        }
+
+        .btn:hover {
+            color: red;
+
+        }
+
+        /* .cfm:hover{
+              color: red;
+        } */
+
+        input[type="checkbox"] {
+            height: 100px;
+            width: 100px;
+            color: red;
+            background-color: blue;
+        }
+
+        input[type="checkbox"]:checked {
+            color: blue;
+            background-color: blue;
+
+        }
+
+        /* ====================== */
+        /* a:active - changes link color when clicked */
+        a:active {
+            color: red;
+        }
+
+        /* input:checked - changes label color when checkbox is checked */
+        input:checked+label {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>ACTIVE :link</h1>
+        <button class="btn">SUBMIT</button><BR>
+        <!-- <button class="cfm">CONFIRM</button> -->
+    </div>
+    <div>
+        <h3>a:active example</h3>
+        <a href="#">Click and hold me</a>
+
+        <h3>input:checked example</h3>
+        <input type="checkbox" id="check">
+        <label for="check">Check me</label>
+
+    </div>
+
+
+
+</body>
+
+</html>

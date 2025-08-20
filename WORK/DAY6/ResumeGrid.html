@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* reset */
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        } */
+        /* css starts */
+        .container{
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: 1fr,1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+          "easy-profile skills"  "education"
+            
+
+          
+            ;
+            /* max-width: 1000px; */
+            /* height: 100vh; */
+            /* margin: 50px auto;  */
+          
+          
+           /* text-align: center;  */
+           /* margin: 200px 100px; */
+           
+           
+          
+          
+           gap: 5px; 
+        }
+
+        .easy-profile{
+            grid-area: easy-profile;
+            background-color: rgb(66, 66, 232);
+            color: rgb(26, 25, 25);
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+
+        }
+        .skills{
+              grid-area: skills;
+              background-color: rgb(124, 124, 245);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+        .education{
+            grid-area: education;
+              background-color: rgb(124, 124, 245);
+            color: rgb(5, 5, 5);
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+        .languages{
+             grid-area: languages;
+              background-color: rgb(124, 124, 245);
+            color: rgb(8, 8, 8);
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            
+
+        }
+        .contact{
+            
+            grid-area: contact;
+              background-color: rgb(124, 124, 245);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+        .experiences{
+            grid-area: experiences;
+             background-color: rgb(124, 124, 245);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="container">
+
+        <div class="easy-profile">easy-profile</div>
+        <div class="skills">skills</div>
+        <div class="education">education</div>
+        <div class="languages">languages</div>
+        <div class="contact">contact</div>
+        <div class="experiences">experiences</div>
+    </div>
+</body>
+</html>

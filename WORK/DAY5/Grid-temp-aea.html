@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "header header header"
+                "sidebar content1 content1"
+                "sidebar content2 content3"
+                "footer footer footer"
+            ;
+            gap: 0px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: rgb(103, 22, 225);
+            color: rgb(241, 237, 237);
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border: 10px solid black;
+        }
+
+        .content1 {
+            grid-area: content1;
+            color: rgb(241, 237, 237);
+            padding: 60px;
+            background-color: antiquewhite;
+            text-align: center;
+            border: 10px solid black;
+            background-image: linear-gradient(rgb(130, 150, 238), blue);
+        }
+
+        .content2 {
+            grid-area: content2;
+            color: rgb(241, 237, 237);
+            padding: 50px;
+            background-color: rgb(17, 189, 189);
+            text-align: center;
+            border: 10px solid black;
+            background-image: linear-gradient(rgb(130, 150, 238), blue);
+
+        }
+
+        .content3 {
+            grid-area: content3;
+            color: rgb(241, 237, 237);
+            padding: 50px;
+            background-color: rgb(17, 189, 189);
+            text-align: center;
+            border: 10px solid black;
+            background-image: linear-gradient(rgb(130, 150, 238), blue);
+
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            color: rgb(241, 237, 237);
+            padding: 50px;
+            background-color: rgb(9, 244, 236);
+            text-align: center;
+            border: 10px solid black;
+        }
+
+        .footer {
+            grid-area: footer;
+            color: rgb(241, 237, 237);
+            padding: 20px;
+            background-color: green;
+            text-align: center;
+            border: 10px solid black;
+            background-color: rgb(103, 22, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="content1">CONTENT -1</div>
+        <div class="content2">CONTENT 2</div>
+        <div class="content3">CONTENT 3</div>
+
+        <div class="sidebar">SIDEBAR</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+
+</html>

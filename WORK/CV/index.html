@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --main-color: rgb(88, 88, 235);
+            --main-color1: rgb(207, 207, 228);
+            --paddingSize: 20px;
+
+        }
+
+        .main {
+            margin-left: 10px;
+
+            min-height: 100vh;
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: auto;
+     width: auto; */
+            margin-left: 205px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin-right: 100px; */
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 2000px;
+            width: 900px;
+            margin: 1px 9px;
+
+        }
+
+        .profile-pic {
+            width: 100px;
+            border-radius: 50%;
+            margin: 50px 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto 300px;
+            grid-template-areas:
+                "easy-profile easy-profile easy-profile skills skills skills"
+                "education education education education languages languages"
+                "contact contact experiences experiences experiences experiences"
+            ;
+            gap: 20px;
+
+        }
+
+        .easy-profile {
+            grid-area: easy-profile;
+            background-color: var(--main-color1);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-align: center;
+            padding: var(--paddingSize);
+        }
+
+        .skills {
+            grid-area: skills;
+            padding: var(--paddingSize);
+            background-color: var(--main-color);
+            text-align: center;
+            height: 222px;
+            width: 256px;
+
+        }
+
+        .education {
+            grid-area: education;
+            padding: var(--paddingSize);
+            background-color: var(--main-color);
+            text-align: center;
+
+        }
+
+        .languages {
+            grid-area: languages;
+            padding: var(--paddingSize);
+            background-color: var(--main-color1);
+            text-align: center;
+
+        }
+
+        .contact {
+            grid-area: contact;
+            background-color: var(--main-color);
+            background-color: antiquewhite;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        /* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+        .contact p {
+            color: #666;
+            /* Lighter text for the details */
+            margin-bottom: 10px;
+            display: flex;
+            /* Use flexbox for icon and text alignment */
+            align-items: center;
+            /* Vertically align icon and text */
+        }
+
+        .contact i {
+            margin-right: 10px;
+            /* Space between icon and text */
+            color: #007bff;
+            /* Example color for icons, adjust as desired */
+        }
+
+        .experiences {
+            grid-area: experiences;
+            padding: var(--paddingSize);
+            background-color: var(--main-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="box">
+            <div class="profile-card">
+
+                <img src="../SHILPA K copy.jpg" class="profile-pic">
+                <h1 style="color: #043333;">Hi, I am Shilpa</h1>
+
+                <h1 style="color: rgb(240, 93, 125);"> Software Developer</h1>
+            </div>
+
+            <div class="container">
+                <div class="easy-profile">
+                    <h3>CAREER OBJECTIVE</h3>
+                    <P>To work in a firm with a professional work driven environment where i can utilize and apply my
+                        knowledge,skills which would enable me to grow while fulfilling organizational goals</P>
+                </div>
+
+
+
+                <div class="skills">
+
+                    <h3>SKILLS</h3>
+                    <ul type="circle">Programming languages
+
+
+                        <li>C</li>
+                        <li>PHP</li>
+
+                    </ul>
+                    <ul type="circle">Stimulation tools
+
+                        <li>Xilinx</li>
+                        <li>Mat lab</li>
+                        <li>Micro wind</li>
+                        <li>ORCAD</li>
+                    </ul>
+                </div>
+
+
+
+
+
+                <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+                <div class="education">
+                    <h3>EDUCATION</h3>
+                    <ul type="circle">
+                        <li> Btech(Electronic and Communication) : AWH Engineering College - (2010-2014) </li>
+                        <li> 12<sup>th</sup> : Spring Valley,School -(2009)</li>
+                        <li> 10 <sup>th</sup> : Sree Narayana Vidhyalayam -(2007)</li>
+                    </ul>
+
+
+
+                </div>
+                <div class="languages">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Malayalam</li>
+                        <li>Tamil</li>
+                    </ul>
+
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kousthubham House</p>
+                    <p><i class="fas fa-phone"></i> 8281-456-106</p>
+                    <p><i class="fas fa-envelope"></i> shilpkoorayil@gmail.com</p>
+
+
+                </div>
+                <div class="experiences">
+                    <h3>Experience</h3>
+                    <ul>NUCORE SOFTWARE SOLUTION
+                        <li>Worked as Senior PHP developer</li>
+                        <li>Project Name: HR-mate</li>
+                        <li>Duration: 1.8 years</li>
+                        <li>10/2014 -07/2016</li>
+                        <li>Built and established strong partnerships with team members and senior leadership</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

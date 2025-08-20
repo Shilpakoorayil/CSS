@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .skew {
+            height: 100px;
+            width: 100px;
+            background-color: darkmagenta;
+            transform: skew(20deg, 10deg);
+            margin: 30px auto;
+
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: 500px;
+                background-color: tomato;
+
+            }
+            /* 90%{
+                top:80px;
+                background-color: red;
+            } */
+
+            100% {
+                top: 0;
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skew"></div>
+</body>
+
+</html>
