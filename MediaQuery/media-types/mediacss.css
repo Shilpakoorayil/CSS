@@ -1,0 +1,26 @@
+
+.content{
+    background-color: lightblue;
+    padding:20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* applies only when viewed on a screen */
+@media screen and (max-width:600px){
+    .content{
+         background-color: rgb(230, 173, 229);
+           font-size: 18px;
+    }
+    
+}
+/* applies only when printing the page */
+@media print{
+    .content{
+         background-color: burlywood;
+         color: rgb(0, 139, 5);
+           font-size: 12px;
+           border: 1px solid dashed rgb(235, 67, 16);
+    }
+
+}
